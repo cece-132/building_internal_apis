@@ -109,4 +109,12 @@ describe "Books API" do
     expect(Book.count).to eq(0)
     expect{Book.find(book.id)}.to raise_error(ActiveRecord::RecordNotFound)
   end
+
+  it 'can sell a book' do
+    books = create_list(:book, 3)
+
+    book_1 = books[0]
+
+    patch "/api/v1/books/#{book_1.id}/sell"
+  end
 end

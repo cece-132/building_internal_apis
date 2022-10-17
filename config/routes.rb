@@ -3,7 +3,9 @@ Rails.application.routes.draw do
 
   namespace :api do
     namespace :v1 do
-      resources :books, only: [:index, :show, :create, :update, :destroy] # doesn't need :edit/:new because those are primaritly for the view
+      resources :books do # doesn't need :edit/:new because those are primarily for the view 
+        match
+      end
     end
     namespace :v2 do
       resources :books, only: [:index]
