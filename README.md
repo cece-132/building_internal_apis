@@ -549,3 +549,6 @@ Supporting Materials
 Getting started with Factory Bot
 Use Factory Bot’s Build Stubbed for a Faster Test (Note that this post uses FactoryGirl instead of FactoryBot. FactoryGirl is the old name.)
 Building an Internal API Short Tutorial
+
+# EXTENSION
+https://gist.github.com/megstang/61da49beb3ab1c6243a412aeb001889c
